@@ -1,4 +1,3 @@
-ls /sys/class/
 ls /sys/class/backlight/ /sys/class/thermal/ /sys/class/power_supply/ /sys/class/net/
 cat /sys/class/power_supply/BAT0/capacity /sys/class/power_supply/BAT0/status 2>/dev/null
 cat /sys/class/backlight/amdgpu_bl1/brightness /sys/class/backlight/amdgpu_bl1/max_brightness 2>/dev/null
@@ -497,4 +496,5 @@ smc
 c
 code
 stow .
+code
 code
