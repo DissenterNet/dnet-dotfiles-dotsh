@@ -1,0 +1,9 @@
+[user]
+	name = DissenterNet
+	email = thedissenternet@gmail.com
+[core]
+	editor = nano
+[init]
+	defaultBranch = Master
+[safe]
+	directory = /home/dnet/dotfiles

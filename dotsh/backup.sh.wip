@@ -1,0 +1,29 @@
+###
+# btrfs
+###
+
+
+mount /dev/sdb1 /mnt/btrfsbu
+
+# FUll snap.
+btrfs send /.snapshots/root-$(date +%F) | btrfs recieve /mnt/btrfsbu
+
+# Incremental snap, just changes.
+btrfs send -p /.snapshots/root"date of snap to sync with" /.snapshots/root-$(date +%F) | btrfs recieve /mnt/btrfsbu
+
+
+###
+# rsync
+###
+
+
+mount /dev/sdb2 /mnt/rsyncbu
+# sync "--delete"
+rsync -aAXHv --numeric-ids --delete \ --exclude={"/dev/*","/proc/*","/sys/*","/run/*","/tmp/*","/mnt/btrfsbu","/mnt/rsyncbu","/mnt/usb"} \ /mnt/rsyncbu
+
+# save partition layout
+sfdisk -d /dev/XXXXX > /mnt/rsyncbbu/partition-layout.sfdisk
+# Save list of installed packages
+pacman -Qqe > /mnt/rsyncbu/pkglist.txt
+# save fstab
+cp /etc/fstab /mnt/rsyncbu/fstab
