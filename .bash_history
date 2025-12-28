@@ -1,42 +1,3 @@
-ls /sys/class/backlight/ /sys/class/thermal/ /sys/class/power_supply/ /sys/class/net/
-cat /sys/class/power_supply/BAT0/capacity /sys/class/power_supply/BAT0/status 2>/dev/null
-cat /sys/class/backlight/amdgpu_bl1/brightness /sys/class/backlight/amdgpu_bl1/max_brightness 2>/dev/null
-cat /sys/class/thermal/thermal_zone0/temp 2>/dev/null
-iwgetid -r 2>/dev/null || cat /sys/class/net/wlo1/operstate 2>/dev/null || echo "No WiFi"
-which -a curl wget git nvim code
-ls -la /home/dnet/ | grep -E "(code|src|dev)"
-make clean && make
-./dwmblocks -p
-amixer scontrols
-amixer scontents
-make
-timeout 5s ./dwmblocks -p
-mkdir -p ~/.local/bin
-chmod +x /home/dnet/.local/bin/vscode-launcher
-chmod +x /home/dnet/.local/bin/volume-control
-chmod +x /home/dnet/.local/bin/network-control
-cd /home/dnet/src/suckless/dwm-dnet && make clean && make
-cd "/home/dnet/src/suckless/dwmblocks-dnet"
-make clean && make
-timeout 5s ./dwmblocks -p
-BUTTON=1 /home/dnet/.local/bin/vscode-launcher
-cd src/
-cd suckless
-cd dwm-dnet/
-cd patches/
-mc
-code
-fc-list | grep -i "nerd\|awesome\|icon" | head -10
-fc-list | head -20
-fc-list | grep -i "terminal"
-which dwmblocks
-ps aux | grep dwmblocks
-xset -q | grep -i font
-sudo pacman -S nerd-fonts-jetbrains-mono
-sudo pacman -Ss nerd-font
-sudo pacman -S ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols
-fc-cache -fv
-fc-list | grep -i "jetbrains\|nerd" | head -10
 sudo mkdir -p /usr/local/bin
 chmod +x /home/dnet/volume-control /home/dnet/network-control /home/dnet/vscode-launcher
 sudo mv /home/dnet/volume-control /home/dnet/network-control /home/dnet/vscode-launcher /usr/local/bin/
@@ -497,4 +458,43 @@ c
 code
 stow .
 code
+code
+c
+c
+l
+c
+l
+cd suck
+toggle_config USE_LS
+smc
+smc
+c
+c
+c
+c
+c
+l
+c
+firefox-developer-edition 
+smc
+c
+bu
+b
+bu
+smc
+sudo mc
+mc
+l
+bu
+l
+source /etc/bash.bashrc
+smc
+sudo mc
+bu
+source /etc/bash.bashrc
+c
+l
+bu
+c
+sudo mc
 code

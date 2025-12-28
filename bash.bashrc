@@ -9,20 +9,13 @@
 # SOURCES
 ###
 
-source ~/.my-environment.sh
-
-if [ -f /etc/.GLOBALS/bash/bash.bashrc.aliases.sh ]; then
-    . /etc/.GLOBALS/bash/bash.bashrc.aliases.sh
-fi
-
-if [ -f /etc/.GLOBALS/bash/alias.config.sh ]; then
-    . /etc/.GLOBALS/bash/alias.config.sh
-fi
+source ~/dotfiles/dotsh/.GLOBALS/bash/bash.bashrc.aliases.sh
+source ~/dotfiles/dotsh/.GLOBALS/bash/bash.bashrc.functions.sh
+source ~/dotfiles/dotsh/.GLOBALS/bash/bash.bashrc.variables
 
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
-
 
 # Prevent doublesourcing
 if [[ -z "${BASHRCSOURCED}" ]] ; then
@@ -42,5 +35,3 @@ fi
 if [[ -r /usr/share/bash-completion/bash_completion ]]; then
   . /usr/share/bash-completion/bash_completion
 fi
-
-
