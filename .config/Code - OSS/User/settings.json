@@ -1,0 +1,23 @@
+{
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "workbench.colorTheme": "Atom One Dark C/C++",
+    "clangd.path": "/home/dnet/.config/Code - OSS/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/21.1.0/clangd_21.1.0/bin/clangd",
+    "workbench.secondarySideBar.defaultVisibility": "visible",
+    "chatgpt.lang": "en",
+    "xline.chromeExecutablePath": "/bin/firefox-developer-edition",
+    "xline.enableCheckpoints": false,
+    "xline.mcp.mode": "full",
+    "xline.modelSettings.o3Mini.reasoningEffort": "high",
+    "gitlens.ai.model": "gitkraken",
+    "gitlens.ai.gitkraken.model": "gemini:gemini-2.0-flash",
+    "diffviewer.outputFormat": "line-by-line",
+    "diffEditor.maxComputationTime": 0,
+    "gitlens.gitCommands.skipConfirmations": [
+        "fetch:command",
+        "stash-push:command",
+        "launchpad:command"
+    ],
+    "git.openRepositoryInParentFolders": "always",
+    "chatgpt.temperature": 0.1
+}
