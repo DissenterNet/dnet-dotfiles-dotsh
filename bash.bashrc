@@ -11,7 +11,7 @@
 
 source ~/dotfiles/dotsh/.GLOBALS/bash/bash.bashrc.aliases.sh
 source ~/dotfiles/dotsh/.GLOBALS/bash/bash.bashrc.functions.sh
-source ~/dotfiles/dotsh/.GLOBALS/bash/bash.bashrc.variables
+source ~/dotfiles/dotsh/.GLOBALS/bash/bash.bashrc.variables.sh
 
 
 # If not running interactively, don't do anything
