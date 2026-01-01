@@ -1,5 +1,5 @@
 #!/bin/bash
-export -a
+#export -a
 # Sources.
 . /etc/.GLOBALS/bash/alias.config.sh
 

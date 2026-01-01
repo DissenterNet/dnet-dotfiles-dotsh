@@ -1,0 +1,9 @@
+~/.cache/wal/fzf-cols
+
+FZF_LAYOUT="--layout=reverse --height 40% --border=sharp --preview-window=sharp"
+# FZF_COLORS="--color fg:15,bg:0,h1:10,fg+:7,info:10,spinner:11,marker:10,pointer:3,header:12"
+FZF_COLORS="--color=fg:${foreground},bg:${background},h1:${color10},fg+:${foreground},bg+:${background3},h1+:${color12} \
+--color=info:${color10},prompt:${color13},pointer:${color101},marker:${color121},spinner:${color14},header:${color4}"
+FZF_BINDS="--bind alt-k:preview-up --bind alt-j:preview-down"
+export FZF_DEFAULT_OPTS="${FZF_LAYOUT} ${FZF_COLORS} ${FZF_BINDS}"
+export FZF_TMUX=1

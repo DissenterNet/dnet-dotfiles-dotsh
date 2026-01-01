@@ -15,6 +15,14 @@
 alias l=" ls -A --color=auto "
 alias ls=" ls --color=auto "
 alias grep=" grep --color=auto "
+alias mv=" mv -i "
+alias rm=" rm -i "
+alias ll=" ls -alF "
+
+alias bg=" wal -i ~/stuff/wallpapers "
+alias gpu=" nvtop "
+alias cpu=" htop "
+alias matrix=" cmatrix -a "q
 
 ###
 # BASH

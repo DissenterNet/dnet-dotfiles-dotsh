@@ -4,4 +4,4 @@
 dotfiles.code-workspace
 .gitconfig
 .gitignore
-.bash_history
+.bash_history*

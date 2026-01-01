@@ -1,0 +1,11 @@
+{
+    "diffviewer.outputFormat": "side-by-side",
+    "clangd.path": "/home/dnet/.config/Code - OSS/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/21.1.0/clangd_21.1.0/bin/clangd",
+    "gitlens.ai.model": "gitkraken",
+    "gitlens.ai.gitkraken.model": "gemini:gemini-2.0-flash",
+    "explorer.confirmDelete": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "git.enableSmartCommit": true,
+    "editor.defaultFormatter": "mblode.pretty-formatter",
+    "git.ignoreRebaseWarning": true
+}
