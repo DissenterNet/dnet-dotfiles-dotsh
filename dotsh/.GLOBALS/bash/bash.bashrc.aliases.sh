@@ -19,6 +19,7 @@ alias mv=" mv -i "
 alias rm=" rm -i "
 alias ll=" ls -alF "
 
+alias extmon=" /home/dnet/dotfiles/dotsh/scripts/mirror-extend.sh "
 alias bg=" wal -i ~/stuff/wallpapers "
 alias gpu=" nvtop "
 alias cpu=" htop "
