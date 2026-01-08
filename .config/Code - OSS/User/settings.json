@@ -7,5 +7,7 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "git.enableSmartCommit": true,
     "editor.defaultFormatter": "mblode.pretty-formatter",
-    "git.ignoreRebaseWarning": true
+    "git.ignoreRebaseWarning": true,
+    "git.confirmSync": false,
+    "telemetry.telemetryLevel": "crash"
 }
